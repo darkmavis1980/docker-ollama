@@ -7,7 +7,7 @@ services:
     ports:
       - 11434:11434
     volumes:
-      - /home/darkmavis/Code/ollama:/root/.ollama
+      - ${MODELS_PATH}:/root/.ollama
   open-webui:
     container_name: open-webui
     image: ghcr.io/open-webui/open-webui:main
